@@ -1,6 +1,5 @@
 #include <iostream>
 #include <string>
-
 #include "vwparser.hpp"
 
 int main(int argc, char** argv)

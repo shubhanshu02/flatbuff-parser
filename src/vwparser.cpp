@@ -15,9 +15,8 @@ flatbuffers::uoffset_t OStreamBuffer::size()
 	return this->_size;
 }
 
-OStreamBuffer *Parser::createTableRow(std::string a_name,
-																			float a_float,
-																			bool a_flag)
+OStreamBuffer *Parser::createTableRow(std::string a_name, float a_float,
+									  bool a_flag)
 {
 	auto name = fbb.CreateString(a_name);
 	auto row = VW::parser::CreateMyTable(fbb, name, a_float, a_flag);
@@ -77,10 +76,8 @@ void Parser::printRow(const VW::parser::MyTable *row)
 	std::cout << "a_flag: " << row->a_flag() << std::endl;
 }
 
-void Parser::take_input(std::string *a_name,
-												float *a_float,
-												bool *a_flag,
-												std::string *file_name)
+void Parser::take_input(std::string *a_name, float *a_float, bool *a_flag,
+						std::string *file_name)
 {
 	std::cout << "Input a_name of the object: ";
 	std::cin >> *a_name;

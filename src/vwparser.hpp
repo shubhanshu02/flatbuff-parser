@@ -1,13 +1,9 @@
 #pragma once
 
-#include <string>
-
-#include <bits/stdc++.h>
-
+#include <iostream>
+#include <fstream>
 #include "flatbuffers/flatbuffers.h"
 #include "schema_generated.h"
-#include <fstream>
-#include <iostream>
 
 class OStreamBuffer
 {

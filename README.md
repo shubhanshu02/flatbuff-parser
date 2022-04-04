@@ -29,3 +29,22 @@ $ ./fparse --read <filename>
 ```sh
 $ ./fparse
 ```
+
+### About the Exercise
+
+This exercise involves:
+
+- Creating a simple FlatBuffer schema file (can be found in `src/schema/schema.fbs`) with the table:
+
+  - a_name: string
+  - a_value: float
+  - a_flag: bool
+
+- Creating the CLI application to write the serialised data to a file using this schema.
+- Creating the CLI application to read the serialised data from a file using this schema.
+
+I have divided the whole code into a pluggable class named `Parser`.
+
+1.  After creating each row for the table, `Parser::createTableRow()` returns an `OStreamBuffer` object which consists of the buffer and its size.
+2.  This buffer can be written to the disk using `Parser::writeToDisk()` function.
+3.  The logic for handling the arguments is kept only in the `main.cpp`

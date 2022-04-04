@@ -5,7 +5,6 @@
 int main(int argc, char** argv)
 {
   Parser parser;
-  std::cout << argc << std::endl;
   if (argc == 1) {
     std::string a_name, file_name;
     float a_float;

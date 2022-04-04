@@ -80,7 +80,7 @@ void Parser::take_input(std::string *a_name, float *a_float, bool *a_flag,
 						std::string *file_name)
 {
 	std::cout << "Input a_name of the object: ";
-	std::cin >> *a_name;
+	std::getline(std::cin, *a_name);
 	std::cout << "Input a_float of the object: ";
 	std::cin >> *a_float;
 	std::cout << "Input a_flag of the object: ";

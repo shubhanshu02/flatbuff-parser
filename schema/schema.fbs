@@ -1,0 +1,10 @@
+
+namespace VW.parser;
+
+table MyTable {
+    a_name: string;
+    a_value: float;
+    a_flag: bool;
+}
+
+root_type MyTable;

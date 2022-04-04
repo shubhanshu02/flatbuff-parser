@@ -14,8 +14,8 @@ int main(int argc, char** argv)
 
     parser.take_input(&a_name, &a_float, &a_flag, &file_name);
     auto buf = parser.createTableRow(a_name, a_float, a_flag);
-    // TODO: Change this to file_name
-    parser.writeToDisk(buf, "file.mon");
+    parser.writeToDisk(buf, file_name);
+    std::cout << "Successfully written to " << file_name << std::endl;
     delete buf;
   } else if (argc == 3
              && (!strcmp(argv[1], "-r") || !strcmp(argv[1], "--read"))) {

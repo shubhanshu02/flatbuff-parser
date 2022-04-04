@@ -48,3 +48,7 @@ I have divided the whole code into a pluggable class named `Parser`.
 1.  After creating each row for the table, `Parser::createTableRow()` returns an `OStreamBuffer` object which consists of the buffer and its size.
 2.  This buffer can be written to the disk using `Parser::writeToDisk()` function.
 3.  The logic for handling the arguments is kept only in the `main.cpp`
+
+### Example Output
+
+![Example Output](https://user-images.githubusercontent.com/54344426/161621957-078941b9-3fc7-401e-b44b-914ed424b0a7.png)

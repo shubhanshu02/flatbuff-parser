@@ -36,7 +36,7 @@ void Parser::writeToDisk(OStreamBuffer *buf, std::string file_name)
 	if (ofs.is_open())
 	{
 		ofs.write(buf->get_buffer(), buf->size());
-		std::cout << buf->size() << std::endl;
+		std::cout << "Total Buffer Size: " << buf->size() << std::endl;
 		ofs.close();
 	}
 	else
